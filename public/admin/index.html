@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Quản trị – HoaBright University</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/admin.css">
+<script src="/js/admin.js" defer></script>
+</head>
+<body class="admin">
+
+<section class="login" data-login>
+  <form class="login-card" data-login-form>
+    <h1 class="display display-sm">Quản trị HoaBright</h1>
+    <p class="muted small">Nhập mật khẩu quản trị để tiếp tục.</p>
+    <div class="field">
+      <label for="token">Mật khẩu quản trị</label>
+      <input id="token" type="password" autocomplete="current-password" required>
+    </div>
+    <p class="form-status" role="alert" data-login-status></p>
+    <button class="btn btn-primary btn-lg" type="submit">Đăng nhập</button>
+    <a class="small" href="/">← Về trang chủ</a>
+  </form>
+</section>
+
+<div class="app" data-app hidden>
+  <header class="admin-bar">
+    <a class="admin-brand" href="/" target="_blank" rel="noopener">HoaBright <span>Quản trị</span></a>
+    <nav class="tabs" aria-label="Mục quản trị" data-tabs>
+      <button type="button" data-tab="inquiries">Liên hệ</button>
+      <button type="button" data-tab="posts">Bài viết</button>
+      <button type="button" data-tab="events">Sự kiện</button>
+      <button type="button" data-tab="programs">Ngành học</button>
+      <button type="button" data-tab="settings">Nội dung trang</button>
+    </nav>
+    <button class="btn btn-outline" type="button" data-logout>Đăng xuất</button>
+  </header>
+  <main class="admin-main">
+    <div class="admin-head">
+      <h1 class="display display-sm" data-title></h1>
+      <button class="btn btn-accent" type="button" data-add hidden>+ Thêm mới</button>
+    </div>
+    <p class="form-status" role="status" data-status></p>
+    <div data-view></div>
+  </main>
+</div>
+
+<dialog class="editor" data-editor>
+  <form method="dialog" class="editor-form" data-editor-form>
+    <h2 class="display display-sm" data-editor-title></h2>
+    <div class="editor-fields" data-editor-fields></div>
+    <p class="form-status" role="alert" data-editor-status></p>
+    <div class="editor-actions">
+      <button class="btn btn-outline" type="button" data-editor-cancel>Huỷ</button>
+      <button class="btn btn-primary" type="submit">Lưu</button>
+    </div>
+  </form>
+</dialog>
+
+</body>
+</html>

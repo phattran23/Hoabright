@@ -1,0 +1,3 @@
+# Sao chép file này thành .dev.vars để chạy ở máy (file .dev.vars không được đưa lên GitHub).
+# Đây là mật khẩu đăng nhập trang /admin khi chạy local.
+ADMIN_TOKEN=doi-thanh-mat-khau-cua-ban
